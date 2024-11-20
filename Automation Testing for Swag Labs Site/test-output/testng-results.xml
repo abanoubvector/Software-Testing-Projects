@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="27" passed="25" failed="2" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-10-13T18:45:36 EEST" name="Command line suite" finished-at="2024-10-13T18:46:04 EEST" duration-ms="27933">
+    <groups>
+    </groups>
+    <test started-at="2024-10-13T18:45:36 EEST" name="Command line test" finished-at="2024-10-13T18:46:04 EEST" duration-ms="27933">
+      <class name="features.f3_shopping_cart.Cart">
+        <test-method is-config="true" signature="setup()[pri:0, instance:features.f3_shopping_cart.Cart@a2341c6]" started-at="2024-10-13T18:45:49 EEST" name="setup" finished-at="2024-10-13T18:45:51 EEST" duration-ms="2351" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="viewCartAfterAddingItems()[pri:1, instance:features.f3_shopping_cart.Cart@a2341c6]" started-at="2024-10-13T18:45:51 EEST" name="viewCartAfterAddingItems" finished-at="2024-10-13T18:45:52 EEST" duration-ms="1160" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewCartAfterAddingItems -->
+        <test-method signature="removeItemsFromCart()[pri:2, instance:features.f3_shopping_cart.Cart@a2341c6]" started-at="2024-10-13T18:45:52 EEST" name="removeItemsFromCart" finished-at="2024-10-13T18:45:53 EEST" duration-ms="604" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeItemsFromCart -->
+        <test-method signature="removeAllItemsFromCart()[pri:3, instance:features.f3_shopping_cart.Cart@a2341c6]" started-at="2024-10-13T18:45:53 EEST" name="removeAllItemsFromCart" finished-at="2024-10-13T18:45:53 EEST" duration-ms="661" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- removeAllItemsFromCart -->
+        <test-method signature="checkOutwithEmptyCart()[pri:4, instance:features.f3_shopping_cart.Cart@a2341c6]" started-at="2024-10-13T18:45:53 EEST" name="checkOutwithEmptyCart" finished-at="2024-10-13T18:45:54 EEST" duration-ms="558" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[TestCase ID:021 - Checkout with Empty Cart expected [Some Incorrect Title] but found [Checkout: Your Information]]]>
+            </message>
+            <full-stacktrace>
+                <![CDATA[java.lang.AssertionError: TestCase ID:021 - Checkout with Empty Cart expected [Some Incorrect Title] but found [Checkout: Your Information]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at features.f3_shopping_cart.Cart.checkOutwithEmptyCart(Cart.java:63)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at features.MainTest.runAllTests(MainTest.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutwithEmptyCart -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:features.f3_shopping_cart.Cart@a2341c6]" started-at="2024-10-13T18:45:54 EEST" name="tearDown" finished-at="2024-10-13T18:45:54 EEST" duration-ms="199" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- features.f3_shopping_cart.Cart -->
+      <class name="features.f1_auth.LoginTest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:features.Login@4fa9ab6]" started-at="2024-10-13T18:45:36 EEST" name="setup" finished-at="2024-10-13T18:45:38 EEST" duration-ms="2295" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="testValidLogin()[pri:1, instance:features.Login@4fa9ab6]" started-at="2024-10-13T18:45:38 EEST" name="testValidLogin" finished-at="2024-10-13T18:45:38 EEST" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testValidLogin -->
+        <test-method signature="testInvalidLogin()[pri:2, instance:features.Login@4fa9ab6]" started-at="2024-10-13T18:45:38 EEST" name="testInvalidLogin" finished-at="2024-10-13T18:45:39 EEST" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testInvalidLogin -->
+        <test-method signature="testEmptyUsername()[pri:3, instance:features.Login@4fa9ab6]" started-at="2024-10-13T18:45:39 EEST" name="testEmptyUsername" finished-at="2024-10-13T18:45:39 EEST" duration-ms="320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyUsername -->
+        <test-method signature="testEmptyPassword()[pri:4, instance:features.Login@4fa9ab6]" started-at="2024-10-13T18:45:39 EEST" name="testEmptyPassword" finished-at="2024-10-13T18:45:39 EEST" duration-ms="303" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testEmptyPassword -->
+        <test-method signature="testLockedOutUser()[pri:5, instance:features.Login@4fa9ab6]" started-at="2024-10-13T18:45:39 EEST" name="testLockedOutUser" finished-at="2024-10-13T18:45:40 EEST" duration-ms="382" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLockedOutUser -->
+        <test-method signature="sqlInjectionOnLogin()[pri:6, instance:features.Login@4fa9ab6]" started-at="2024-10-13T18:45:40 EEST" name="sqlInjectionOnLogin" finished-at="2024-10-13T18:45:40 EEST" duration-ms="312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- sqlInjectionOnLogin -->
+        <test-method signature="caseSensitivityOnUsernamePassword()[pri:7, instance:features.Login@4fa9ab6]" started-at="2024-10-13T18:45:40 EEST" name="caseSensitivityOnUsernamePassword" finished-at="2024-10-13T18:45:40 EEST" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- caseSensitivityOnUsernamePassword -->
+        <test-method signature="passwordFieldMasking()[pri:8, instance:features.Login@4fa9ab6]" started-at="2024-10-13T18:45:40 EEST" name="passwordFieldMasking" finished-at="2024-10-13T18:45:41 EEST" duration-ms="179" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- passwordFieldMasking -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:features.Login@4fa9ab6]" started-at="2024-10-13T18:45:41 EEST" name="tearDown" finished-at="2024-10-13T18:45:41 EEST" duration-ms="206" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- features.f1_auth.LoginTest -->
+      <class name="features.f2_product_management.Products">
+        <test-method is-config="true" signature="setup()[pri:0, instance:features.f2_product_management.Products@2d3ef181]" started-at="2024-10-13T18:45:41 EEST" name="setup" finished-at="2024-10-13T18:45:43 EEST" duration-ms="2111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="viewProducts()[pri:1, instance:features.f2_product_management.Products@2d3ef181]" started-at="2024-10-13T18:45:43 EEST" name="viewProducts" finished-at="2024-10-13T18:45:43 EEST" duration-ms="430" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewProducts -->
+        <test-method signature="verifyProductDescription()[pri:2, instance:features.f2_product_management.Products@2d3ef181]" started-at="2024-10-13T18:45:43 EEST" name="verifyProductDescription" finished-at="2024-10-13T18:45:44 EEST" duration-ms="546" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyProductDescription -->
+        <test-method signature="correctImageDisplayForProducts()[pri:3, instance:features.f2_product_management.Products@2d3ef181]" started-at="2024-10-13T18:45:44 EEST" name="correctImageDisplayForProducts" finished-at="2024-10-13T18:45:44 EEST" duration-ms="545" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- correctImageDisplayForProducts -->
+        <test-method signature="addSingleItemToCart()[pri:4, instance:features.f2_product_management.Products@2d3ef181]" started-at="2024-10-13T18:45:44 EEST" name="addSingleItemToCart" finished-at="2024-10-13T18:45:45 EEST" duration-ms="556" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addSingleItemToCart -->
+        <test-method signature="addMultipleItemsToCart()[pri:5, instance:features.f2_product_management.Products@2d3ef181]" started-at="2024-10-13T18:45:45 EEST" name="addMultipleItemsToCart" finished-at="2024-10-13T18:45:46 EEST" duration-ms="491" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- addMultipleItemsToCart -->
+        <test-method signature="productSortingLowToHigh()[pri:6, instance:features.f2_product_management.Products@2d3ef181]" started-at="2024-10-13T18:45:46 EEST" name="productSortingLowToHigh" finished-at="2024-10-13T18:45:46 EEST" duration-ms="820" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productSortingLowToHigh -->
+        <test-method signature="productSortingHighToLow()[pri:7, instance:features.f2_product_management.Products@2d3ef181]" started-at="2024-10-13T18:45:46 EEST" name="productSortingHighToLow" finished-at="2024-10-13T18:45:47 EEST" duration-ms="956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productSortingHighToLow -->
+        <test-method signature="productSortingAToZ()[pri:8, instance:features.f2_product_management.Products@2d3ef181]" started-at="2024-10-13T18:45:47 EEST" name="productSortingAToZ" finished-at="2024-10-13T18:45:48 EEST" duration-ms="570" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productSortingAToZ -->
+        <test-method signature="productSortingZToA()[pri:9, instance:features.f2_product_management.Products@2d3ef181]" started-at="2024-10-13T18:45:48 EEST" name="productSortingZToA" finished-at="2024-10-13T18:45:48 EEST" duration-ms="568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- productSortingZToA -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:features.f2_product_management.Products@2d3ef181]" started-at="2024-10-13T18:45:48 EEST" name="tearDown" finished-at="2024-10-13T18:45:49 EEST" duration-ms="196" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- features.f2_product_management.Products -->
+      <class name="features.f4_checkout.Checkout">
+        <test-method is-config="true" signature="setup()[pri:0, instance:features.f4_checkout.Checkout@6e4c0d8c]" started-at="2024-10-13T18:45:54 EEST" name="setup" finished-at="2024-10-13T18:45:56 EEST" duration-ms="2308" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="checkoutWithoutFillingRequiredFields()[pri:1, instance:features.f4_checkout.Checkout@6e4c0d8c]" started-at="2024-10-13T18:45:56 EEST" name="checkoutWithoutFillingRequiredFields" finished-at="2024-10-13T18:45:57 EEST" duration-ms="909" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkoutWithoutFillingRequiredFields -->
+        <test-method signature="checkOutWithInvalidZipCode()[pri:2, instance:features.f4_checkout.Checkout@6e4c0d8c]" started-at="2024-10-13T18:45:57 EEST" name="checkOutWithInvalidZipCode" finished-at="2024-10-13T18:45:58 EEST" duration-ms="942" status="FAIL">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[TestCase ID:023 - Checkout with Invalid Zip Code expected [Some Incorrect Title] but found [Checkout: Overview]]]>
+            </message>
+            <full-stacktrace>
+                <![CDATA[java.lang.AssertionError: TestCase ID:023 - Checkout with Invalid Zip Code expected [Some Incorrect Title] but found [Checkout: Overview]
+at org.testng.Assert.fail(Assert.java:111)
+at org.testng.Assert.failNotEquals(Assert.java:1578)
+at org.testng.Assert.assertEqualsImpl(Assert.java:150)
+at org.testng.Assert.assertEquals(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:656)
+at features.f4_checkout.Checkout.checkOutWithInvalidZipCode(Checkout.java:52)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at features.MainTest.runAllTests(MainTest.java:25)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:686)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:992)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1597)
+at org.testng.TestRunner.privateRun(TestRunner.java:739)
+at org.testng.TestRunner.run(TestRunner.java:614)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at com.intellij.rt.testng.IDEARemoteTestNG.run(IDEARemoteTestNG.java:65)
+at com.intellij.rt.testng.RemoteTestNGStarter.main(RemoteTestNGStarter.java:105)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- checkOutWithInvalidZipCode -->
+        <test-method signature="cancelCheckoutAfterInitiating()[pri:3, instance:features.f4_checkout.Checkout@6e4c0d8c]" started-at="2024-10-13T18:45:58 EEST" name="cancelCheckoutAfterInitiating" finished-at="2024-10-13T18:46:00 EEST" duration-ms="1338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- cancelCheckoutAfterInitiating -->
+        <test-method signature="viewOrderDetails()[pri:4, instance:features.f4_checkout.Checkout@6e4c0d8c]" started-at="2024-10-13T18:46:00 EEST" name="viewOrderDetails" finished-at="2024-10-13T18:46:01 EEST" duration-ms="1232" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- viewOrderDetails -->
+        <test-method signature="verifyPriceCalculation()[pri:5, instance:features.f4_checkout.Checkout@6e4c0d8c]" started-at="2024-10-13T18:46:01 EEST" name="verifyPriceCalculation" finished-at="2024-10-13T18:46:02 EEST" duration-ms="1247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyPriceCalculation -->
+        <test-method signature="verifyOrderConfirmation()[pri:6, instance:features.f4_checkout.Checkout@6e4c0d8c]" started-at="2024-10-13T18:46:02 EEST" name="verifyOrderConfirmation" finished-at="2024-10-13T18:46:03 EEST" duration-ms="1260" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- verifyOrderConfirmation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:features.f4_checkout.Checkout@6e4c0d8c]" started-at="2024-10-13T18:46:03 EEST" name="tearDown" finished-at="2024-10-13T18:46:04 EEST" duration-ms="182" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- features.f4_checkout.Checkout -->
+    </test> <!-- Command line test -->
+  </suite> <!-- Command line suite -->
+</testng-results>

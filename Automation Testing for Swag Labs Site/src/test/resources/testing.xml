@@ -1,0 +1,28 @@
+<!DOCTYPE suite SYSTEM
+        "https://testng.org/testng-1.0.dtd">
+<suite name="Sauce Demo Suite" parallel="false">
+    <!-- Auth Tests -->
+    <test name="Authentication Tests">
+        <classes>
+            <class name="features.f1_auth.LoginTest"/>
+        </classes>
+    </test>
+<!--    &lt;!&ndash;Product Management Tests &ndash;&gt;-->
+<!--    <test name="Product Management Tests">-->
+<!--        <classes>-->
+<!--            <class name="features.f2_product_management. ProductListTest"/>-->
+<!--            <class name="features.f2_product_management. Product Details Test"/>-->
+<!--            <class name="features.f2_product_management. ProductSortTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    &lt;!&ndash; Shopping Cart Tests &ndash;&gt;-->
+<!--    <test name="Shopping Cart Tests">-->
+<!--        <classes>-->
+<!--        </classes>-->
+<!--    </test>-->
+<!--    &lt;!&ndash; Checkout Tests &ndash;&gt;-->
+<!--    <test name="Checkout Tests">-->
+<!--        <classes>-->
+<!--        </classes>-->
+<!--    </test>-->
+</suite>
