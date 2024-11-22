@@ -1,32 +1,75 @@
-# DEPI SauceDemo Automation Project
+# SauceDemo Automation Testing Project
 
-## Overview
-This project automates test cases for the SauceDemo e-commerce website using Java and Selenium WebDriver. It is designed to test various functionalities of the website, including login, product sorting, adding items to the cart, and purchase processes.
+Welcome to the **SauceDemo Automation Testing** project! 🎉
 
-## Technologies Used
-- **Java**: Programming language for test scripts.
-- **Selenium WebDriver**: For browser automation.
-- **TestNG**: Test framework for organizing and running tests.
-- **Maven**: For dependency management.
+This repository provides an automation framework for testing the **SauceDemo** website using **Selenium WebDriver** and **TestNG**. The project automates the main functionalities of the website, including logging in, adding products to the cart, and completing the checkout process. It includes test scripts, configurations, and reports that help ensure the functionality of the SauceDemo website remains intact across different browsers.
 
-## Setup & Installation
-1. Clone the repository:
-   ```
-   git clone https://github.com/Red-Cloud2000/DEPI_SauceDemo_Automation_Project.git
-   ```
-2. Import the project into your preferred IDE.
-3. Download necessary dependencies using Maven.
-4. Update (testFolderPath) value in config file under config folder (you will find helpful information there).
-5. Configure `testng.xml` for your test requirements.
+---
 
-## Running Tests
-- To execute tests, run the `testng.xml` file directly from the IDE.
+## 📋 Table of Contents
 
-## Folder Structure
-- **src**: Contains test scripts and page object classes.
-- **test-output**: Stores TestNG reports and logs.
+- [Project Overview](#project-overview)
+- [Key Features](#key-features)
+- [Tech Stack](#tech-stack)
+- [Setup Instructions](#setup-instructions)
+  - [Prerequisites](#prerequisites)
+  - [Clone the Repository](#clone-the-repository)
+  - [Set Up the Project](#set-up-the-project)
+  - [Configure WebDriver](#configure-webdriver)
+- [Running the Tests](#running-the-tests)
+  - [TestNG](#testng)
+  - [Test Reports](#test-reports)
+- [Test Scenarios](#test-scenarios)
+- [Folder Structure](#folder-structure)
+- [Code Quality](#code-quality)
+- [Contributing](#contributing)
+- [License](#license)
 
-## Contributing
-Contributions are welcome! Please fork the repository and submit a pull request for review.
+---
 
+## 📝 Project Overview
 
+The **SauceDemo Automation Testing** project leverages **Selenium WebDriver** to automate key actions on the **SauceDemo** website. Using **TestNG**, the project supports parallel test execution, detailed reporting, and robust test management. The tests ensure the critical functionalities of the website work as expected, including user authentication, cart management, and the checkout process.
+
+Additionally, this project includes configurations for **Qodana**, a tool used for code quality analysis.
+
+---
+
+## 🚀 Key Features
+
+- **Selenium WebDriver**: Automates web interactions (e.g., login, add products to cart, checkout).
+- **TestNG**: Framework for test management, running tests, and generating detailed test reports.
+- **Cross-browser Testing**: Supports testing across **Google Chrome**, **Mozilla Firefox**, and other popular browsers.
+- **Test Reports**: Detailed, automatically generated reports in `/test-output` to track test execution results.
+- **Code Quality**: Integrated with **Qodana** for comprehensive code quality checks.
+- **Parallel Test Execution**: Run tests concurrently to speed up the testing process.
+
+---
+
+## 🧰 Tech Stack
+
+- **Selenium WebDriver**: For automating browser interactions.
+- **TestNG**: For test case organization, execution, and reporting.
+- **Maven**: For dependency management and project build automation.
+- **Qodana**: Code quality analysis tool to ensure high-quality code.
+- **Java 8+**: Required for running the automation framework.
+
+---
+
+## 📋 Setup Instructions
+
+### Prerequisites
+
+Ensure that the following tools are installed on your local machine:
+
+- **Java 8 or later**: Required for running the tests.
+- **Maven**: Dependency management and project build tool.
+- **TestNG**: Test management framework for organizing and running tests.
+- **WebDriver**: Ensure appropriate WebDriver executables are available (ChromeDriver, GeckoDriver, etc.).
+
+### Clone the Repository
+
+Clone the repository to your local machine using the following command:
+
+```bash
+git clone https://github.com/your-username/DEPI_SauceDemo_Automation_Project-master.git
