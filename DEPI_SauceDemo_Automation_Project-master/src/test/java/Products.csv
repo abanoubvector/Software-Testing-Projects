@@ -1,0 +1,60 @@
+Key,Name,Status,Precondition,Objective,Folder,Priority,Component,Labels,Owner,Estimated Time,Coverage (Issues),Coverage (Pages),Expected Result,Platform,Test Data,Test Steps,Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Test Data,Test Script (Step-by-Step) - Expected Result,Test Script (Plain Text),Test Script (BDD)
+DPSAT-T35,Verify Product Sorting Functionality by Price (ex: Price: Low to High),Approved,    * The user must be logged in to the application.,,/Product/Product Sort,Normal,,,712020:11b86cfd-59da-4ea7-a959-e0e905162ccf,00:02,,,"    * The products should be sorted in (ex: ascending order based on their
+      price).
+    * The product with (ex: the lowest price) should appear at the top,
+      followed by (ex: higher-priced) products.",Web,    * Sort Option: (ex: Price Low to High),"    * Navigate to<https://www.saucedemo.com/> .
+    * Log in using valid credentials.
+    * On the homepage, click on the sort dropdown menu.
+    * Select the option (ex: Price low to high) from the dropdown.",    * Navigate to<https://www.saucedemo.com/>,,"The SauceDemo login page is displayed, showing fields for username and 
+password.",,
+,,,,,,,,,,,,,,,,,    * Log in using valid credentials.,,"The user successfully logs in and is redirected to the product homepage, 
+displaying a list of available products.",,
+,,,,,,,,,,,,,,,,,"    * On the homepage, click on the sort dropdown menu.",    * Sort Option: (ex: Price Low to High),"The sort dropdown menu is displayed, showing various sorting options (e.g., 
+Name (A to Z), Name (Z to A), Price (low to high), Price (high to low)).",,
+,,,,,,,,,,,,,,,,,    * Select the option (ex: Price low to high) from the dropdown.,,"    * The product list is rearranged to display items sorted by (ex: price
+      in ascending order).
+    * The product images, names, and prices should correctly reflect the
+      new sorting order.",,
+DPSAT-T36,Verify Product Display on Homepage,Approved,"    * The user must have access to the internet.
+    * The user must have valid credentials to log in.",,/Product/Product List,Normal,,,712020:11b86cfd-59da-4ea7-a959-e0e905162ccf,00:02,,,"All products are displayed on the homepage with the following details:
+    * Name: Each product has a visible name.
+    * Image: Each product displays a corresponding image.
+    * Description: Each product has a description.
+    * Price: Each product displays the correct price.",Web,"    * Username: standard_user
+    * Password: secret_sauce","    * Navigate to<https://www.saucedemo.com/> .
+    * Log in using valid credentials 
+    * Observe the homepage where products are displayed.","    * Navigate to<https://www.saucedemo.com/> .
+    * 
+    * 
+",,"The SauceDemo login page is displayed, showing fields for username and 
+password.",,
+,,,,,,,,,,,,,,,,,    * Log in using valid credentials ,"         * Username: standard_user
+         * Password: secret_sauce","The user is successfully logged in and redirected to the product homepage, 
+where a list of available products is displayed",,
+,,,,,,,,,,,,,,,,,    * Observe the homepage where products are displayed.,,"The homepage displays various products, including the Sauce Labs Backpack. 
+If the Sauce Labs Backpack is out of stock, it should be labeled clearly 
+(e.g., ""Out of Stock"") with a disabled ""Add to Cart"" button. All other 
+available products should be visible and ready for purchase.",,
+DPSAT-T38,Verify Product Display on Product Page,Approved,"    * The user must have access to the internet.
+    * The user must have valid credentials to log in.",,/Product/Product Page,Normal,,,712020:11b86cfd-59da-4ea7-a959-e0e905162ccf,00:02,,,"    * User is redirected to the product details page.
+    * The details page displays:
+          o Name: Each product has a visible name.
+          o Image: Each product displays a corresponding image.
+          o Description: Each product has a description.
+          o Price: Each product displays the correct price.
+          o Add to Cart button: Visible on the page.",Web,"    * Username: standard_user
+    * Password: secret_sauce
+    * Product Name: Sauce Labs Backpack","    * Navigate to<https://www.saucedemo.com/> .
+    * Log in using valid credentials 
+    * Locate a product on the homepage (e.g., Sauce Labs Backpack).
+    * Click on the product image or name.
+    * Observe the Product Page where the product is displayed.",    * Navigate to<https://www.saucedemo.com/> .,,"The SauceDemo login page is displayed, showing fields for username and 
+password.",,
+,,,,,,,,,,,,,,,,,    * Log in using valid credentials ,"         * Username: standard_user
+         * Password: secret_sauce","The user is successfully logged in and redirected to the product homepage, 
+where a list of available products is displayed",,
+,,,,,,,,,,,,,,,,,"    * Locate a product on the homepage (e.g., Sauce Labs Backpack).",,"The ""Sauce Labs Backpack"" product is visible on the homepage with its 
+image, name, and price.",,
+,,,,,,,,,,,,,,,,,    * Click on the product image or name.,    * Product Name: Sauce Labs Backpack,"The user is redirected to the product details page, where the product 
+image, description, add to cart button and price are displayed accurately, 
+matching the product from the homepage.",,

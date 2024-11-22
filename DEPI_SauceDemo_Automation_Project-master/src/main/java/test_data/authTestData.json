@@ -1,0 +1,56 @@
+[
+  {
+    "username": "standard_user" ,
+    "password": "secret_sauce" ,
+    "expectedResult" : "success",
+    "testCase": "valid_credentials"
+  },
+  {
+    "username": "standar_user" ,
+    "password": "secret_sauce" ,
+    "expectedResult": "success",
+    "testCase": "invalid_username"
+  },
+  {
+    "username": "standard_user" ,
+    "password": "secre_sauce" ,
+    "expectedResult": "success",
+    "testCase": "invalid_password"
+  },
+  {
+    "username": "" ,
+    "password": "secret_sauce" ,
+    "expectedResult" : "success",
+    "testCase": "empty_username"
+  },
+  {
+    "username": "standard_user" ,
+    "password": "" ,
+    "expectedResult" : "success",
+    "testCase": "empty_password"
+  },
+  {
+    "username": "" ,
+    "password": "" ,
+    "expectedResult" : "success",
+    "testCase": "empty_username_and_password"
+  },
+  {
+    "username": "locked_out_user" ,
+    "password": "secret_sauce" ,
+    "expectedResult" : "success",
+    "testCase": "locked_user"
+  },
+  {
+    "username": "sTandard_user" ,
+    "password": "secret_sauce" ,
+    "expectedResult" : "success",
+    "testCase": "username_Case_Sensitivity"
+  },
+  {
+    "username": "standard_user" ,
+    "password": "secreT_sauce" ,
+    "expectedResult" : "success",
+    "testCase": "password_Case_Sensitivity"
+  }
+]

@@ -1,0 +1,53 @@
+Key,Name,Status,Precondition,Objective,Folder,Priority,Component,Labels,Owner,Estimated Time,Coverage (Issues),Coverage (Pages),Expected Result,Platform,Test Data,Test Steps,Test Script (Step-by-Step) - Step,Test Script (Step-by-Step) - Test Data,Test Script (Step-by-Step) - Expected Result,Test Script (Plain Text),Test Script (BDD)
+DPSAT-T20,Verify successful checkout,Approved,"User is logged in, has items in the cart",,/Checkout,Normal,,,,00:01,,,"The order should be placed successfully and the user should see an order 
+confirmation page",Web,"First Name: Jon
+Last Name: Do
+Postal Code : 1234","1. Navigate to the cart
+2. Click On ' Checkout' Button
+3. Enter User Details
+4. Click Continue",1. Navigate to the cart,N/A,"Cart page displays all items with total cost and ""Proceed to Checkout"" 
+button.
+
+",,
+,,,,,,,,,,,,,,,,, Click On ' Checkout' Button,N/A,User is taken to the checkout page with payment and shipping options.,,
+,,,,,,,,,,,,,,,,,Enter User Details,"First Name: Jon
+Last Name: Do
+Postal Code : 123","User enters valid payment information, and details are accepted.",,
+,,,,,,,,,,,,,,,,,Click Continue,N/A,"The order should be placed successfully and the user should see an order 
+confirmation page",,
+DPSAT-T23,Verify checkout without shipping,Approved,"User is logged in, has items in the cart",,/Checkout,Normal,,,,,,,"Error message should display: ""Shipping address is required to proceed with 
+checkout.""",Web,No shipping address provided,"1. Navigate to the cart
+2. Click 'Proceed to Checkout'
+3. Enter expired payment details
+4. Confirm the order",1. Navigate to the cart,No shipping address provided,"    * Cart page displays all items with total cost and ""Proceed to
+      Checkout"" button.",,
+,,,,,,,,,,,,,,,,,2. Click 'Proceed to Checkout',,User is directed to the checkout page with payment and shipping options.,,
+,,,,,,,,,,,,,,,,,3. Enter expired payment details,,"Payment is declined, and an error message for expired card is shown.",,
+,,,,,,,,,,,,,,,,,4. Confirm the order,,"Error message should display: ""Shipping address is required to proceed with 
+checkout.""",,
+DPSAT-T25,Verify checkout with multiple items,Approved,"User is logged in, has multiple items in the cart",,/Checkout,Normal,,,,,,,"The order should be placed successfully, and the total cost should reflect 
+the combined price of all items",Web,"Multiple items in the cart: Item A, Item B, Item C","1. Navigate to the cart
+2. Click 'Proceed to Checkout'
+3. Enter valid payment and shipping details
+4. Confirm the order",1. Navigate to the cart,"Multiple items in the cart: Item A, Item B, Item C","The order should be placed successfully, and the total cost should reflect 
+the combined price of all items",,
+,,,,,,,,,,,,,,,,,2. Click 'Proceed to Checkout',,User is directed to the checkout page with payment and shipping options.,,
+,,,,,,,,,,,,,,,,,3. Enter valid payment and shipping details,,Payment and shipping information is accepted without errors.,,
+,,,,,,,,,,,,,,,,,4. Confirm the order,,"The order should be placed successfully, and the total cost should reflect 
+the combined price of all items",,
+DPSAT-T28,Verify order summary accuracy,Approved,"User is logged in, has items in the cart",,/Checkout,Normal,,,,,,,"The order summary should accurately reflect all items, pricing, discounts, 
+taxes, and shipping charges before confirming the order",Web,"Items in cart, payment details, shipping address","1. Add items to the cart
+2. Proceed to checkout
+3. Review the order summary before placing the order",1. Add items to the cart,N/A,One item is successfully added to the cart.,,
+,,,,,,,,,,,,,,,,,2. Proceed to checkout,"Items in cart, payment details, shipping address","User is directed to the checkout page, with the cart items displayed.",,
+,,,,,,,,,,,,,,,,,3. Review the order summary before placing the order,N/A,"The order summary should accurately reflect all items, pricing, discounts, 
+taxes, and shipping charges before confirming the order",,
+DPSAT-T46,Verify First Name within Valid input.,Approved,    * The form contains a First Name field.,,/Checkout,Normal,,,,,,,The first name should be accepted as valid input.,Web,First Name: John,"Step: Enter a valid first name (e.g., John) in the First Name field.",Enter a valid first name into the First Name field.,First Name: John,The system should accept the input without any error message.,,
+DPSAT-T47,Verify Last Name filed within Valid Input,Approved,    * The form contains a Last Name field.,,/Checkout,Normal,,,,,,,The last name should be accepted as valid input.,Web,Last Name: Doe,"1.Enter a valid last name (e.g., Doe) into the Last Name field.","Enter a valid last name (e.g., Doe) into the Last Name field.",Last Name: Doe,The system should accept the input without any error message.,,
+DPSAT-T48,Verify Postal Code with Valid Input.,Approved,    * The form contains a Postal Code field.,,/Checkout,Normal,,,,,,,The form contains a Postal Code field.,Web,Postal Code: 12345,"1.Enter a valid postal code (e.g., 12345) into the Postal Code field.","Enter a valid postal code (e.g., 12345) into the Postal Code field.",Postal Code: 12345,The system should accept the input without any error message.,,
+DPSAT-T54,Verify First Name Filed Within Empty Input,Approved,    * The form contains a First Name field.,,/Checkout,Normal,,,,,,,    * The system should display an error indicating the field is required.,Web,First Name: (Empty),Leave the First Name field blank and submit the form.,Leave the First Name field blank and submit the form.,First Name: (Empty),"The system should display a required field error (e.g., ""First Name is 
+required"").",,
+DPSAT-T55,Verify Last Name filed within Empty Input,Approved,    * The form contains a Last Name field.,,/Checkout,Normal,,,,,,,    * The system should display an error indicating the field is required.,Web,Last Name: (empty),Leave the Last Name field blank and submit the form.,Leave the Last Name field blank and submit the form.,Last Name: (empty),"The system should display a required field error (e.g., ""Last Name is 
+required"").",,
+DPSAT-T56,Verify Postal Code Filed within Empty Input,Approved,    * The form contains a Postal Code field.,,/Checkout,Normal,,,,,,,    * The system should display an error indicating the field is required.,Web,Postal Code: (empty),3.Leave the Postal Code field blank and submit the form.,Leave the Postal Code field blank and submit the form.,Leave the Postal Code field blank and submit the form.,"The system should display a required field error (e.g., ""Postal Code is 
+required"").",,
