@@ -6,27 +6,6 @@ This repository provides an automation framework for testing the **SauceDemo** w
 
 ---
 
-## 📋 Table of Contents
-
-- [Project Overview](#project-overview)
-- [Key Features](#key-features)
-- [Tech Stack](#tech-stack)
-- [Setup Instructions](#setup-instructions)
-  - [Prerequisites](#prerequisites)
-  - [Clone the Repository](#clone-the-repository)
-  - [Set Up the Project](#set-up-the-project)
-  - [Configure WebDriver](#configure-webdriver)
-- [Running the Tests](#running-the-tests)
-  - [TestNG](#testng)
-  - [Test Reports](#test-reports)
-- [Test Scenarios](#test-scenarios)
-- [Folder Structure](#folder-structure)
-- [Code Quality](#code-quality)
-- [Contributing](#contributing)
-- [License](#license)
-
----
-
 ## 📝 Project Overview
 
 The **SauceDemo Automation Testing** project leverages **Selenium WebDriver** to automate key actions on the **SauceDemo** website. Using **TestNG**, the project supports parallel test execution, detailed reporting, and robust test management. The tests ensure the critical functionalities of the website work as expected, including user authentication, cart management, and the checkout process.
